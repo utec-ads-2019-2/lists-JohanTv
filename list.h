@@ -13,7 +13,7 @@ class List {
     public:
         List() : head(nullptr), tail(nullptr), nodes(0) {};
 
-        virtual T front() = 0;
+        virtual T front()=0;
         virtual T back() = 0;
         virtual void push_front(T) = 0;
         virtual void push_back(T) = 0;
@@ -28,7 +28,6 @@ class List {
         virtual string name() = 0;
 
         ~List() {
-            // TODO
         }
 };
 
