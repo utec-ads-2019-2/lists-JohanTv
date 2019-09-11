@@ -4,6 +4,7 @@
 #include <stdexcept>
 #include <iostream>
 #include <assert.h>
+#include <algorithm>
 
 #include "../mock/mocker.h"
 #include "../forward.h"
