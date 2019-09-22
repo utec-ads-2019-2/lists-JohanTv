@@ -14,6 +14,7 @@ class CircularLinkedList : public List<T> {
         }
 
         T back() {
+            // En la circular no es necesario tener cola
             if(this->tail!= nullptr) return this->tail->data;
             throw new out_of_range("The list is empty");
         }

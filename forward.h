@@ -46,6 +46,7 @@ class ForwardList : public List<T> {
         }
 
         void pop_front() {
+            // En los pops no es necesario controlar esto, igual está bien 
             if(empty()) throw new out_of_range("The list is empty");
             else{
                 Node<T>* temp = this->head;
@@ -55,6 +56,7 @@ class ForwardList : public List<T> {
             }
         }
         void pop_back() {
+            // En los pops no es necesario controlar esto, igual está bien 
             if(empty()) throw new out_of_range("The list is empty");
             else{
                 Node<T>* temp = this->tail;
@@ -122,6 +124,7 @@ class ForwardList : public List<T> {
     
         void reverse() {
             if(!empty()) {
+                // Esto puede ser más eficiente
                 Node<T>* temp = this->head;
                 int length = this->nodes;
                 T* elements = new T[length];
@@ -150,6 +153,7 @@ class ForwardList : public List<T> {
         }
 
 	    ForwardIterator<T> end() {
+            // Debe ser el siguiente de tail
             ForwardIterator<T> it(this->tail);
             return it;
         }

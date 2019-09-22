@@ -91,6 +91,7 @@ class LinkedList : public List<T> {
         }
 
         bool empty() {
+            // Esto puede ser una línea
             if(this->nodes == 0) return true;
             return false;
         }
